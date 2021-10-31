@@ -13,6 +13,7 @@ body {
 
 .container {
     position: relative;
+    min-width: 1860px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -28,17 +29,13 @@ body {
     left: 0;
     object-fit: contain;
 }
+
 #witch {
     position: fixed;
+    min-width: 1366px;
 
 }
 
-#gobackPage:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-    /*cursor: url("assets/spookMeLogo.png"), default;*/
-}
 .wrap {
    position: absolute;
    bottom: 100px;

@@ -1,62 +1,239 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <title>Spook Me | Introduction</title>
-    <style>
-        .nav-link {
-            color: orange;
-        }
-        .nav-link:hover {
-            color: white;
-        }
-        .card-header {
-            background-color: black;
-        }
-        li {
-            border-color: solid 1px red;
-        }
-        
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <title>Spook Me | Introduction</title>
+  <style>
+    .nav-link {
+      color: orange;
+    }
+
+    .nav-link:hover {
+      color: white;
+    }
+
+    .card-header {
+      background-color: black;
+    }
+    .data {
+      color: chartreuse;
+      background-color: black;
+    }
+    .data:hover{
+      box-shadow: 5px 10px 18px #66f116f3;
+      transform: scale(1.06);
+    }
+    li {
+      border-color: solid 1px red;
+    }
+    .img-overlay:hover{ 	
+	box-shadow: 5px 10px 18px #f1b716f3;
+	transform: scale(1.06);
+}
+  </style>
 </head>
-<body>
-    <div class="card text-center">
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
-            <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" href="#whyScare">Why Scare?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#getScare">Get Scare</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " data-bs-toggle="tab"  role="tab"  href="#findMe">Find Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="index.html">Take Me Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="to_the_woods.html">Get lost in woods</a>
-              </li>
-          </ul>
+
+<body >
+  <div class="card text-center">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
+        <!--<li class="nav-item">
+          <a class="nav-link " data-bs-toggle="tab" href="#whyScare">Why Scare?</a>
+        </li>-->
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="tab" href="#getScare">Get Scare</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " data-bs-toggle="tab" role="tab" href="#findMe">Find Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="index.html">Take Me Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="to_the_woods.html">Get lost in woods</a>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body tab-content" style=" background:url(assets/bg1.png)no-repeat;background-size: cover;">
+      <!--<div class="tab-pane fade " role="tabpanel" id="whyScare">
+        <img src="assets/homePage/whyScareHead.png" alt="" style="width: 100%; height: auto; ">
+        <img src="assets/homePage/1.png" alt="" style="width: 100%; height: auto; ">
+      </div>-->
+      <div class="tab-pane active" role="tabpanel" id="getScare" >
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card data h-100">
+              <img src="assets/scare_img/1.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Moon and Bats</h5>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card data h-100">
+              <img src="assets/scare_img/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jack-O-Lantern</h5>
+                              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 data">
+              <img src="assets/scare_img/3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Halloween Theme</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 data">
+              <img src="assets/scare_img/4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Graveyard</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 data">
+              <img src="assets/scare_img/5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ScareCrow</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 data">
+              <img src="assets/scare_img/6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Haunted House</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 data">
+              <img src="assets/scare_img/7.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Woman</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 data">
+              <img src="assets/scare_img/11.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Grim Reaper</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 data">
+              <img src="assets/scare_img/9.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pennywise</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 data">
+              <img src="assets/scare_img/16.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Scary Deer</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 data">
+              <img src="assets/scare_img/12.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">A Witch</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 data">
+              <img src="assets/scare_img/131.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Zombies</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 data">
+              <img src="assets/scare_img/14.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ghost</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 data">
+              <img src="assets/scare_img/15.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Joker and Harley Quinn</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 data">
+              <img src="assets/scare_img/8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Creepy Pumpkin </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 data">
+              <img src="assets/scare_img/17.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Scare Crow</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 data">
+              <img src="assets/scare_img/18.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Grim Reaper</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 data">
+              <img src="assets/scare_img/10.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Joker</h5>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card-body tab-content">
-            <div class="tab-pane active " role="tabpanel" id="whyScare">
-                <img src="assets/homePage/whyScareHead.png" alt="" style="width: 100%; height: auto; ">
-                <img src="assets/homePage/1.png" alt="" style="width: 100%; height: auto; ">
-            </div>
-            <div class="tab-pane fade" role="tabpanel" id="getScare">
-                <h1>find Me</h1>
-            </div>
-            <div class="tab-pane fade" role="tabpanel" id="findMe">
-                <h1>find Me</h1>
-            </div>
-        </div>
+        
       </div>
+      <div class="tab-pane fade" role="tabpanel" id="findMe">
+        <img src="assets/findme_img/findMe.gif" alt="" style="width: 100%; object-fit:cover; min-width: 1800px">
+        <button>  
+        <img src="assets/findme_img/github.png" style="position: fixed; bottom: 120px; left: -10px;" class="img-overlay" onclick="window.open('https://github.com/Mansi-Binjola/')">
+      </button>
+      <button>
+        <img src="assets/findme_img/linkedIn.png" style="position:fixed; bottom: 120px; left: 360px;" class="img-overlay" onclick="window.open('')">
+      </button>
+      <button>
+        <img src="assets/findme_img/twitter.png" style="position:fixed; bottom: 120px; left: 800px;" class="img-overlay" onclick="window.open('')"> 
+      </button>    
+      </div>
+    </div>
 </body>
 </html>

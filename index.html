@@ -1,17 +1,18 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spook Me</title>
-    <link rel="icon" href="assets/spookMeLogo.png">
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spook Me</title>
+  <link rel="icon" href="assets/spookMeLogo.png">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-  
-    <!--<nav class="navbar navbar-light bg-dark">
+
+  <!--<nav class="navbar navbar-light bg-dark">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="assets/spookMeLogo.png" alt="" width="100" height="auto">
@@ -23,29 +24,29 @@
     <h1 class="text-center m-3 p-4" style="color: orange;">Spook Me</h1>
       <p class="text-center m-2" style="color: red;">A perfect website to give you information about all the spooks and knowledge about those spooks</p>
     </div>-->
-    
-    <div class="container">
-      <img src="assets/heading_spookme.png" alt="" class="object" data-value="4">
-      
-      <img src="assets/1.png" alt="" class="object" data-value="-2">
-      <img src="assets/witch.png" alt="" id="witch" data-value="-6">
-      <img src="assets/2.png" alt="" class="object" data-value="6">
-      <img src="assets/4.png" alt="" class="object" data-value="4">
-      <img src="assets/3.png" alt="" class="object" data-value="-6">
-      
-      <div class="wrap">
-        <button class="button" onclick="move()">scare me</button>
-      </div>
+
+  <div class="container">
+    <img src="assets/heading_spookme.png" alt="" class="object" data-value="4">
+
+    <img src="assets/1.png" alt="" class="object" data-value="-2">
+    <img src="assets/witch.png" alt="" id="witch" data-value="-6">
+    <img src="assets/2.png" alt="" class="object" data-value="6" style="top: 50px; left: -30px;">
+    <img src="assets/4.png" alt="" class="object" data-value="4" style="top: 50px; left: 20px;">
+    <img src="assets/3.png" alt="" class="object" data-value="-6" style="top: 50px;">
+
+    <div class="wrap">
+      <button class="button" onclick="move()">scare me</button>
     </div>
-    <script type="text/javascript">
+  </div>
+  <script type="text/javascript">
     document.addEventListener("mousemove", parallax);
     function parallax(e) {
-      document.querySelectorAll(".object").forEach(function(move){
+      document.querySelectorAll(".object").forEach(function (move) {
         var moving_value = move.getAttribute("data-value");
         var x = e.clientX * moving_value / 250;
         var y = e.clientY * moving_value / 250;
 
-        move.style.transform = "translateX(" + x + "px) translateY(" + y +"px)"; 
+        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
       });
     }
     /*window.addEventListener("scroll",function(){
@@ -54,10 +55,10 @@
       witch.style.top = -value * 2 + "px";
       witch.style.left = -value * -1.5 + "px";
     });*/
-    
+
     function move() {
       var id = null;
-      document.removeEventListener("mousemove",parallax);
+      document.removeEventListener("mousemove", parallax);
       var elem = document.getElementById("witch");
       var pos = 0;
       clearInterval(id);
@@ -68,18 +69,18 @@
         if (pos == 350) {
           clearInterval(id);
           setTimeout(
-            function() 
-            {
+            function () {
               //do something special
             }, 1000);
           window.location.href = "main.html";
         } else {
-          pos++; 
-          elem.style.top = -pos * 1.5  + 'px'; 
-          elem.style.left = -pos * -2 + 'px'; 
+          pos++;
+          elem.style.top = -pos * 1.5 + 'px';
+          elem.style.left = -pos * -2 + 'px';
         }
       }
     }
-    </script>
+  </script>
 </body>
+
 </html>
