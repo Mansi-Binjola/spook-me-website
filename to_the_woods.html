@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spookMe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="assets/lost page.png" alt="" class="object" data-value="4">
+        <a href="index.html">
+            <img src="assets/13.png" alt="" class="goBackPage" data-value="3" id="goBackPage">
+        </a>
+    </div>
+    <script>
+        document.addEventListener("mousemove", parallax);
+    function parallax(e) {
+      document.querySelectorAll(".goBackPage").forEach(function(move){
+        var moving_value = move.getAttribute("data-value");
+        var x = e.clientX * moving_value / 250;
+        var y = e.clientY * moving_value / 250;
+
+        move.style.transform = "translateX(" + x + "px) translateY(" + y +"px)"; 
+      });
+    }
+    </script>
+</body>
+</html>
